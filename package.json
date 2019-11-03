@@ -4,14 +4,30 @@
     "description": "VSCode snippet extension",
     "version": "1.0.0",
     "publisher": "profiks",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/profiks/vscode-extension"
+    },
     "icon": "icon.png",
     "engines": {
         "vscode": "^1.39.0"
     },
     "categories": [
-        "Snippets"
+        "Snippets",
+        "Themes",
+        "Other"
     ],
+    "activationEvents": [
+        "onCommand:extension.createBoilerplate"
+    ],
+    "main": "./extension.js",
     "contributes": {
+        "commands": [
+            {
+                "command": "extension.createBoilerplate",
+                "title": "OSF Create Boilerplate"
+            }
+        ],
         "snippets": [
             {
                 "language": "html",
@@ -20,6 +36,13 @@
             {
                 "language": "html",
                 "path": "./snippets/buttons.json"
+            }
+        ],
+        "themes": [
+            {
+              "label": "OSFTheme",
+              "uiTheme": "vs-dark",
+              "path": "./theme/osf-theme.json"
             }
         ]
     }
