@@ -1,0 +1,13 @@
+{
+    "Code snippets heading module template": {
+        "prefix": "!mod:heading",
+        "body": [
+            "<h1 class=\"heading\">${1:Title}</h1>",
+            "<h2 class=\"subheading\">{2:Subtitle}</h2>",
+            "<div class=\"card\">",
+            "$0",
+            "</div>"
+        ],
+        "description": "Create heading-subheading module"
+    }
+}

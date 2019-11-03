@@ -1,0 +1,26 @@
+{
+    "name": "extension-snippet",
+    "displayName": "extension-snippet",
+    "description": "VSCode snippet extension",
+    "version": "1.0.0",
+    "publisher": "profiks",
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.39.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/buttons.json"
+            }
+        ]
+    }
+}
